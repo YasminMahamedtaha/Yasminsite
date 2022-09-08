@@ -1,0 +1,30 @@
+#heading2{
+    background-color: rgb(222,222, 222);
+    font-family:Lucida Sans Unicode, Helvetica, Arial ;
+    text-decoration: underline;
+    text-align: left;
+    color: rgb(168,170,22);
+
+}
+
+#heading{
+    color:rgb(168,170,22);
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(222,222,222);
+}
+
+#comment1{
+    background-color: rgb(181, 181,81);
+    margin-left: 5%;
+}
+
+#link{
+    color: rgb(168,170,28);
+    text-decoration: underline;
+}
+ 
+
+tbsp{
+    text-decoration: underline;
+}
