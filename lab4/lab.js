@@ -12,7 +12,7 @@ const max= function(a ,b){
  console.log(max(10,20));
 
 //2.Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
-const b= function(a ,b,c){
+const maxOfThree= function(a ,b,c){
     if(a>b && a>c)
        return a;
  
@@ -21,7 +21,7 @@ const b= function(a ,b,c){
      else
          return c;
     }
- console.log(b(10,20,30));
+ console.log(maxOfThree(10,20,30));
 
  //3.Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
  
@@ -85,19 +85,19 @@ console.log(reverse("jag testar"));
             if(arr[i].length>max.length)
                max=arr[i];
         }
-    return max;
+    return max.length;
 
  }
  console.log(findlongestWord(['One','Three','Configure']));
 
 
 //7.Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
-function greaterthan(a,i){
+function filterLongWords(a,i){
 
-    return greaterthan = a.filter(a=>a.length > i);
+    return filterLongWords = a.filter(a=>a.length > i);
 }
 
-console.log(greaterthan(['One','Threes','Configure',3]));
+console.log(filterLongWords(['One','Threes','Configure'],3));
 
 //8.a) multiply each element by 10; 
 
@@ -129,26 +129,26 @@ function myFunctionTest(expected, found) {
   }
 
 
-  //console.log("Expected output of max(20,10) is 20 -> " + myFunctionTest(20, max(20, 10)));
+  console.log("Expected output of max(20,10) is 20 -> " + myFunctionTest(20, max(20, 10)));
 
-  //console.log("Expected output of maxOfThree(10,20,30) is 30 -> " + myFunctionTest(30, maxOfThree(10, 20, 30)));
+  console.log("Expected output of maxOfThree(10,20,30) is 30 -> " + myFunctionTest(30, maxOfThree(10, 20, 30)));
 
-  //console.log("Expected output of isVowel('a') is true -> " + myFunctionTest(true, isVowel("a")));
+  console.log("Expected output of isVowel('a') is true -> " + myFunctionTest(true, isVowel("a")));
 
-  //console.log("Expected output of sum([1,2,3,4]) is 10 -> " + myFunctionTest(10, sum([1, 2, 3, 4])));
+  console.log("Expected output of sum([1,2,3,4]) is 10 -> " + myFunctionTest(10, sum([1, 2, 3, 4])));
 
-  //console.log("Expected output of multiply([1,2,3,4]) is 24 -> " + myFunctionTest(24, multiply([1, 2, 3, 4])));
+  console.log("Expected output of multiply([1,2,3,4]) is 24 -> " + myFunctionTest(24, multiply([1, 2, 3, 4])));
 
 
-  //console.log("Expected output of reverse('jag testar') ratset gaj -> " + myFunctionTest("ratset gaj", reverse("jag testar")));
+  console.log("Expected output of reverse('jag testar') ratset gaj -> " + myFunctionTest("ratset gaj", reverse("jag testar")));
 
   
 
-  //console.log("Expected output of findLongestWord(['One','Three','Configure']) is 9 => " +
-                 //myFunctionTest(9,findlongestWord(['One', 'Three', 'Configure'])));
+  console.log("Expected output of findLongestWord(['One','Three','Configure']) is 9 => " +
+                 myFunctionTest(9,findlongestWord(['One', 'Three', 'Configure'])));
 
     
-//console.log("Expected output of filterLongWords(['One','Threes','Configure'3) is ['Threes','Configure'] => " +
-           //myFunctionTest(["Threes", "Configure"], filterLongWords(["One", "Threes", "Configure"],3)));
+console.log("Expected output of filterLongWords(['One','Threes','Configure'3) is ['Threes','Configure'] => " +
+           myFunctionTest(["Threes", "Configure"], filterLongWords(["One", "Threes", "Configure"],3)));
 
 
