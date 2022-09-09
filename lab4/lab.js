@@ -6,7 +6,10 @@ const max= function(a ,b){
       else
         return b;
 }
-console.log(max(10,20));
+
+// const maxnum= document.getElementById("btn1").onclick=max(10,20);
+// document.getElementById("p1").innerHTML=maxnum;
+ console.log(max(10,20));
 
 //2.Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 const b= function(a ,b,c){
